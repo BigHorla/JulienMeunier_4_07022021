@@ -1,21 +1,79 @@
+html{
+    max-width: 100vw;
+}
 body {
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 4rem;
+    font-family: "helvetica";
+}
+h2{
+    font-size: 3rem;
+    font-family: "helvetica";
+}
+p {
+    font-size: 1.6rem
 }
 
+q{
+    font-style: italic;
+    font-size: 2.3rem;
+}
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+figure img{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+}
+#ready{
+    font-size: 3rem;
+    font-family: "helvetica";
+    color: white;
+}
+.voile{
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #ffffffc0;
+    width: 90%;
+    align-self: center;
+    margin: 0 auto;
+}
+.voile h1{
+    font-size: 2rem;
+}
+.voile p{
+    font-size: 1.5rem;
+}
 a, button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    text-decoration: none;
+}       
+a:focus {
+    border: solid red 0.5rem;
+    font-weight: bold;
+    text-decoration: none;                            
 }
 
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -645,12 +703,59 @@ h4,
 h5,
 h6,
 p,
-label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+form{
+    font-family: "helvetica";
+    font-size: 1rem;
+    border: solid #c27956;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+label{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contact{
+    font-size: 1.8rem;
+    border: solid #c27956;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+    
+    
+    
+}
+.contact-subsection{
+    font-size: 3rem;
+    margin: 2rem;
+}
+.info{
+    color: black;
+    font-family: "helvetica";
+    padding-left: 1rem;
 }
 
 .container {
@@ -675,9 +780,7 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
+
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -688,7 +791,9 @@ p {
     font-size: 20px;
     font-family: "Open Sans";
 }
-
+#parlons{
+    font-size: 3rem;
+}
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
@@ -700,12 +805,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
-}
-
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
+    margin: auto;
 }
 
 h3 {
@@ -752,8 +852,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #555048;
     padding: 40px 40px 40px 40px;
+    border: solid; 
 }
 
 .bold-link {
@@ -817,11 +918,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/brainstorm-webdesign-conception.png");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/brainstorm-webdesign.png");
 }
 
 @media (max-width: 1024px) {
@@ -892,6 +993,12 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    article{
+        margin-bottom: 3rem;
+    }
+    article figcaption{
+        margin-bottom: 2rem;
     }
     h1,
     h2,
@@ -979,7 +1086,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 4rem 0;
     }
     .bloc-sm,
     .bloc-md {
