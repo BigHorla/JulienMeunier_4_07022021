@@ -919,6 +919,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/brainstorm-webdesign-conception.jpg");
+    background-size: 100vw auto;
 }
 
 .bg-presentation {
