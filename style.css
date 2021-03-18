@@ -918,11 +918,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/brainstorm-webdesign-conception.png");
+    background-image: url("img/brainstorm-webdesign-conception.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/brainstorm-webdesign.png");
+    background-image: url("img/brainstorm-webdesign.jpg");
 }
 
 @media (max-width: 1024px) {
